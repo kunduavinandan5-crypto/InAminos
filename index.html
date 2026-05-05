@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="InAmigos Foundation — A youth-led NGO working across education, women empowerment, environment and rural development. Join the movement. #InAmigos" />
+    <title>InAmigos Foundation — Small acts. Shared amigos. Real change.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation (centered pill) -->
+    <header class="nav" id="nav">
+        <div class="nav__pill">
+            <a href="#top" class="nav__brand">
+                <span class="nav__logo">IA</span>
+                <span class="nav__brand-text">InAmigos<span class="nav__brand-dot">.</span></span>
+            </a>
+            <nav class="nav__links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#impact">Impact</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+            <a href="#join" class="nav__cta" data-testid="nav-join-btn">Join Us <i
+                    class="fa-solid fa-arrow-right"></i></a>
+            <button class="nav__toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__blob hero__blob--3"></div>
+        <div class="hero__grain"></div>
+
+        <div class="container hero__grid">
+            <div class="hero__content">
+                <div class="hero__eyebrow reveal">
+                    <span class="dot"></span> A youth-led movement since 2017
+                </div>
+                <h1 class="hero__title reveal">
+                    Small acts.<br />
+                    <em>Shared amigos.</em><br />
+                    <span class="hero__title-underline">Real change.</span>
+                </h1>
+                <p class="hero__sub reveal">
+                    InAmigos Foundation is building a kinder, more equitable India — one classroom, one village, one
+                    conversation at a time. Grassroots projects. Youth-led. Radically transparent.
+                </p>
+                <div class="hero__actions reveal">
+                    <a href="#join" class="btn btn--primary" data-testid="hero-join-btn">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Join the Movement
+                    </a>
+                    <a href="#projects" class="btn btn--ghost" data-testid="hero-projects-btn">
+                        Explore Our Work <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+
+                <div class="hero__meta reveal">
+                    <div><strong>12K+</strong><span>Lives touched</span></div>
+                    <div class="divider"></div>
+                    <div><strong>40+</strong><span>Active volunteers</span></div>
+                    <div class="divider"></div>
+                    <div><strong>#InAmigos</strong><span>Follow the story</span></div>
+                </div>
+            </div>
+
+            <div class="hero__visual reveal">
+                <div class="hero__sticker">
+                    <span>Since</span><strong>2017</strong>
+                </div>
+
+                <div class="hero__collage">
+                    <figure class="hero__img hero__img--a">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80"
+                            alt="Children learning" />
+                        <figcaption>Shiksha · Jaipur</figcaption>
+                    </figure>
+                    <figure class="hero__img hero__img--b">
+                        <img src="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?w=700&q=80"
+                            alt="Plantation drive" />
+                        <figcaption>Prakriti · 5k+ trees</figcaption>
+                    </figure>
+                    <figure class="hero__img hero__img--c">
+                        <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?w=700&q=80"
+                            alt="Women empowerment" />
+                        <figcaption>Shakti · all-women</figcaption>
+                    </figure>
+
+                    <div class="hero__badge">
+                        <i class="fa-solid fa-star"></i>
+                        <div>
+                            <strong>Top-rated</strong>
+                            <span>by volunteers 2024</span>
+                        </div>
+                    </div>
+
+                    <svg class="hero__arrow" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 50 Q 40 10 80 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-dasharray="4 6" />
+                        <path d="M72 32 L80 40 L72 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="hero__scroll" aria-label="Scroll to About">
+            <span></span>
+            <small>scroll</small>
+        </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>EDUCATION</span><span>&#9679;</span>
+            <span>WOMEN EMPOWERMENT</span><span>&#9679;</span>
+            <span>ENVIRONMENT</span><span>&#9679;</span>
+            <span>RURAL DEVELOPMENT</span><span>&#9679;</span>
+            <span>HEALTH &amp; HYGIENE</span><span>&#9679;</span>
+            <span>#InAmigos</span><span>&#9679;</span>
+            <span>EDUCATION</span><span>&#9679;</span>
+            <span>WOMEN EMPOWERMENT</span><span>&#9679;</span>
+            <span>ENVIRONMENT</span><span>&#9679;</span>
+            <span>RURAL DEVELOPMENT</span><span>&#9679;</span>
+            <span>HEALTH &amp; HYGIENE</span><span>&#9679;</span>
+            <span>#InAmigos</span><span>&#9679;</span>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container about__grid">
+            <div class="about__head reveal">
+                <span class="section__label">01 — Who we are</span>
+                <h2 class="section__title">We’re a bunch of <em>friends</em> with a stubborn belief: that change, when
+                    shared, becomes unstoppable.</h2>
+            </div>
+
+            <div class="about__body">
+                <p class="reveal">
+                    InAmigos Foundation started as a college initiative and grew into a full-fledged non-profit working
+                    across several Indian states. "Amigos" means <em>friends</em> — and we believe the most powerful
+                    social change doesn’t come from institutions alone, but from a circle of friends who refuse to look
+                    away.
+                </p>
+                <p class="reveal">
+                    From teaching underprivileged children and running menstrual hygiene drives, to planting native
+                    trees and mentoring first-generation learners — every InAmigos project is designed, led and executed
+                    by young changemakers on the ground.
+                </p>
+
+                <div class="values">
+                    <div class="value reveal">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h4>Grassroots first</h4>
+                        <p>We start with conversations in the community, not reports in a conference room.</p>
+                    </div>
+                    <div class="value reveal">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h4>Youth-led</h4>
+                        <p>Every project lead is under 30. Energy, empathy and accountability — no middlemen.</p>
+                    </div>
+                    <div class="value reveal">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <h4>Radical transparency</h4>
+                        <p>Every rupee, every hour, every outcome — documented and publicly shared.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__label">02 — Ongoing Projects</span>
+                <h2 class="section__title">Five missions. One shared <em>why</em>.</h2>
+                <p class="section__sub">Each project addresses a specific gap our volunteers discovered on the ground.
+                    They’re active, measurable and always open to new hands.</p>
+            </div>
+
+            <div class="projects__grid">
+
+                <article class="project reveal" style="--accent:#d96833;">
+                    <div class="project__img"
+                        style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80');">
+                    </div>
+                    <div class="project__body">
+                        <span class="project__tag">Education</span>
+                        <h3>Project <em>Shiksha</em></h3>
+                        <p>Free after-school learning centres for 400+ children from migrant and low-income families
+                            across 6 cities. Weekend volunteer teachers, donated books, curiosity-first pedagogy.</p>
+                        <div class="project__impact">
+                            <span><i class="fa-solid fa-graduation-cap"></i> 400+ learners</span>
+                            <span><i class="fa-solid fa-location-dot"></i> 6 cities</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal" style="--accent:#b8336a;">
+                    <div class="project__img"
+                        style="background-image:url('https://images.unsplash.com/photo-1594708767771-a7502209ff51?w=1200&q=80');">
+                    </div>
+                    <div class="project__body">
+                        <span class="project__tag">Women Empowerment</span>
+                        <h3>Project <em>Shakti</em></h3>
+                        <p>Menstrual hygiene awareness, sustainable pad distribution, and tailoring/skill workshops for
+                            women in semi-urban communities. Led by an all-women volunteer circle.</p>
+                        <div class="project__impact">
+                            <span><i class="fa-solid fa-venus"></i> 2,300+ women reached</span>
+                            <span><i class="fa-solid fa-briefcase"></i> 60 micro-entrepreneurs</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal" style="--accent:#2f6d4f;">
+                    <div class="project__img"
+                        style="background-image:url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80');">
+                    </div>
+                    <div class="project__body">
+                        <span class="project__tag">Environment</span>
+                        <h3>Project <em>Prakriti</em></h3>
+                        <p>Native tree plantation drives, plastic-free campus campaigns, and climate literacy sessions
+                            with school students. Over 5,000 trees geo-tagged and tracked.</p>
+                        <div class="project__impact">
+                            <span><i class="fa-solid fa-tree"></i> 5,000+ trees</span>
+                            <span><i class="fa-solid fa-recycle"></i> 18 green schools</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal" style="--accent:#c98a2b;">
+                    <div class="project__img"
+                        style="background-image:url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1200&q=80');">
+                    </div>
+                    <div class="project__body">
+                        <span class="project__tag">Rural Development</span>
+                        <h3>Project <em>Gramin</em></h3>
+                        <p>Digital literacy and government-scheme access camps in partner villages. We help rural
+                            families navigate Aadhaar, banking, scholarships and agri-subsidies.</p>
+                        <div class="project__impact">
+                            <span><i class="fa-solid fa-house-chimney"></i> 14 villages</span>
+                            <span><i class="fa-solid fa-id-card"></i> 900+ families assisted</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project reveal" style="--accent:#1d5b87;">
+                    <div class="project__img"
+                        style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80');">
+                    </div>
+                    <div class="project__body">
+                        <span class="project__tag">Health &amp; Hygiene</span>
+                        <h3>Project <em>Swasth</em></h3>
+                        <p>Free health camps, eye check-ups and nutrition kits for slum communities. Partnered with
+                            local doctors who volunteer one weekend a month.</p>
+                        <div class="project__impact">
+                            <span><i class="fa-solid fa-stethoscope"></i> 30+ camps</span>
+                            <span><i class="fa-solid fa-heart-pulse"></i> 6,000+ screened</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project project--cta reveal">
+                    <div class="project__body project__body--cta">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Got a project idea of your own?</h3>
+                        <p>If you see a gap in your community that InAmigos could fill, pitch it to us. We incubate
+                            volunteer-led ideas with a small seed grant and a lot of amigos.</p>
+                        <a href="#join" class="btn btn--primary btn--sm" data-testid="project-pitch-btn">Pitch an Idea
+                            <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="section impact" id="impact">
+        <div class="container">
+            <div class="section__head reveal center">
+                <span class="section__label">03 — Social Impact</span>
+                <h2 class="section__title">Why this work matters.</h2>
+                <p class="section__sub">A few numbers we are proud of — but behind each is a name, a story, a family.
+                    These are the reasons we keep showing up.</p>
+            </div>
+
+            <div class="impact__stats">
+                <div class="stat reveal">
+                    <div class="stat__num" data-count="12450">0</div>
+                    <div class="stat__label">Lives directly impacted</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat__num" data-count="5200">0</div>
+                    <div class="stat__label">Trees planted &amp; tracked</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat__num" data-count="160">0</div>
+                    <div class="stat__label">Grassroots events hosted</div>
+                </div>
+                <div class="stat reveal">
+                    <div class="stat__num" data-count="22">0</div>
+                    <div class="stat__label">Partner villages &amp; schools</div>
+                </div>
+            </div>
+
+            <div class="impact__quote reveal">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>“Before Shiksha, my daughter didn’t know she could dream of college. Now she teaches younger kids in
+                    our basti every Sunday. That is the real change.”</p>
+                <cite>— Sunita Devi, parent, Delhi</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section__head reveal">
+                <span class="section__label">04 — On the ground</span>
+                <h2 class="section__title">Moments from the field.</h2>
+                <p class="section__sub">Snippets from our drives, camps, classrooms and community days. Tag
+                    <strong>#InAmigos</strong> to share yours.
+                </p>
+            </div>
+
+            <div class="gallery__grid">
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000&q=80');">
+                    <figcaption>Shiksha weekend class, Jaipur</figcaption>
+                </figure>
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&q=80');">
+                    <figcaption>Shakti workshop, Lucknow</figcaption>
+                </figure>
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1497375638960-ca368c7231e4?w=1000&q=80');">
+                    <figcaption>Prakriti plantation drive</figcaption>
+                </figure>
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&q=80');">
+                    <figcaption>Swasth health camp</figcaption>
+                </figure>
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1518398046578-8cca57782e17?w=1000&q=80');">
+                    <figcaption>Gramin digital literacy</figcaption>
+                </figure>
+                <figure class="reveal"
+                    style="background-image:url('https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1000&q=80');">
+                    <figcaption>Volunteer orientation day</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join / CTA -->
+    <section class="section join" id="join">
+        <div class="container">
+            <div class="join__head reveal">
+                <span class="section__label light">05 — Join the movement</span>
+                <h2 class="section__title light">Be an <em>amigo</em>.<br />Pick the way that fits you.</h2>
+            </div>
+
+            <div class="join__grid">
+                <a href="#" class="join__card reveal" data-testid="cta-volunteer">
+                    <div class="join__icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <h3>Volunteer</h3>
+                    <p>Give us 4 hours a month. Teach, document, design, organise — we’ll match you to a project you
+                        actually care about.</p>
+                    <span class="join__link">Become a volunteer <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="join__card reveal join__card--featured" data-testid="cta-support">
+                    <div class="join__icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Support</h3>
+                    <p>Fund a child’s year of learning for the cost of one dinner out. Every contribution is tracked,
+                        tagged and reported back to you.</p>
+                    <span class="join__link">Support a project <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="#" class="join__card reveal" data-testid="cta-partner">
+                    <div class="join__icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Partner</h3>
+                    <p>Colleges, CSR teams, small businesses — collaborate with us on campaigns, drives and long-term
+                        social impact programs.</p>
+                    <span class="join__link">Start a partnership <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="join__hashtag reveal">
+                <span>#</span>
+                <h4>InAmigos</h4>
+                <p>Follow the hashtag across Instagram, LinkedIn and X to see our amigos in action.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <div class="nav__brand">
+                    <span class="nav__logo">IA</span>
+                    <span class="nav__brand-text">InAmigos<span class="nav__brand-dot">.</span></span>
+                </div>
+                <p>Small acts. Shared amigos. Real change. A youth-led foundation registered in India, working across 6+
+                    states.</p>
+            </div>
+
+            <div class="footer__col">
+                <h5>Explore</h5>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#impact">Impact</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <div class="footer__col">
+                <h5>Reach us</h5>
+                <a href="mailto:hello@inamigosfoundation.org">hello@inamigosfoundation.org</a>
+                <a href="mailto:volunteer@inamigosfoundation.org">volunteer@inamigosfoundation.org</a>
+                <span>Registered office: New Delhi, India</span>
+            </div>
+
+            <div class="footer__col">
+                <h5>Follow #InAmigos</h5>
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/inamigos?utm_medium=copy_link" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/InAmigos" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/InamigosF?s=08" target="_blank" rel="noopener noreferrer"
+                        aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@InAmigos" target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <span>© 2026 InAmigos Foundation.</span>
+            <a href="#top" class="footer__top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
